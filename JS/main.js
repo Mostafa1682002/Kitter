@@ -22,3 +22,6 @@ bars.onclick = () => {
     bars.classList.toggle("fa-times");
     nav.classList.toggle('active')
 }
+
+
+let yaer = document.querySelector('.year').innerHTML = `${new Date().getFullYear()}`;

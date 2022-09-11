@@ -47,7 +47,7 @@ html {
 }
 
 section {
-    padding: var(--section-padding) 0px 0px;
+    padding: var(--section-padding) 0px 20px;
 }
 
 .section-title {
@@ -475,7 +475,7 @@ header .icons span:hover {
 }
 
 .products .container .content-products .product .imgs {
-    height: 300px;
+    height: 310px;
     border-radius: var(--radius-10);
     outline: 2px solid var(--platinum);
     margin-bottom: 20px;
@@ -506,6 +506,8 @@ header .icons span:hover {
 
 .products .container .content-products .product .imgs img {
     width: 100%;
+    height: 300px;
+    border-radius: var(--radius-10);
     position: absolute;
     top: 0;
     left: 0;
@@ -568,3 +570,290 @@ header .icons span:hover {
 
 
 /* Ends Products */
+
+
+/* Start services */
+
+.services .container .head-img {
+    margin: 30px auto;
+    width: fit-content;
+}
+
+.services .container .section-title {
+    font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    .services .container .section-title {
+        font-size: 27px;
+    }
+}
+
+.services .container .content-services {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.services .container .content-services .ser {
+    text-align: center;
+}
+
+.services .container .content-services .ser .text {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.services .container .content-services .ser h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.services .container .content-services .ser p {
+    color: var(--light-gray);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Ends services */
+
+
+/* Start Cat */
+
+.cat {
+    background-image: url("../images/cta-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cat .container .content-cat {
+    display: flex;
+    gap: 20px;
+}
+
+.cat .container .content-cat .box {
+    width: 48%;
+}
+
+.cat .container .content-cat .box .p-cat {
+    width: 100%;
+}
+
+.cat .container .content-cat .box .icon {
+    padding: 60px 0 10px;
+}
+
+.cat .container .content-cat .box h3 {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.cat .container .content-cat .box p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .cat .container .content-cat {
+        flex-direction: column;
+    }
+    .cat .container .content-cat .box {
+        width: 96%;
+        margin: auto;
+    }
+    .cat .container .content-cat .box:nth-child(1) {
+        display: none;
+    }
+}
+
+
+/* Ends Cat */
+
+
+/* Start Bander */
+
+.bander {}
+
+.bander .container {}
+
+.bander .container .content-bander {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.bander .container .content-bander .ban {
+    min-width: 200px;
+    text-align: center;
+}
+
+.bander .container .content-bander .ban:not(:last-child) {
+    border-right: 1px solid var(--platinum);
+}
+
+.content-bander::-webkit-scrollbar {
+    height: 10px;
+}
+
+.content-bander::-webkit-scrollbar-track {
+    outline: 2px solid var(--portland-orange);
+    border-radius: var(--radius-10);
+}
+
+.content-bander::-webkit-scrollbar-thumb {
+    border-radius: var(--radius-10);
+    background-color: var(--portland-orange);
+    border: 2px solid var(--white);
+}
+
+.content-bander::-webkit-scrollbar-button {
+    width: calc(25% - 30px);
+}
+
+
+/* Ends Bander */
+
+
+/* Start footer */
+
+footer {
+    background-image: url("../images/footer-bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--raisin-black);
+    padding: 100px 0 0px;
+    margin-top: 15px;
+}
+
+footer .footer-content {
+    padding: 10px 15px 30px;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    border-bottom: 1px solid var(--battleship-gray);
+}
+
+footer .footer-content .list {
+    width: 23%;
+    margin: auto;
+}
+
+footer .footer-content .list h2 {
+    color: var(--white);
+    font-size: 27px;
+}
+
+footer .footer-content .list p {
+    color: var(--battleship-gray);
+    padding: 25px 0 10px;
+}
+
+footer .footer-content .list p a {
+    color: var(--portland-orange);
+}
+
+footer .footer-content .list ul li {
+    margin: 10px 0;
+}
+
+footer .footer-content .list ul li i {
+    color: var(--portland-orange);
+    margin-right: 10px;
+}
+
+footer .footer-content .list ul li a {
+    color: var(--white);
+}
+
+footer .footer-content .list .icons {
+    padding: 10px 0;
+    display: flex;
+}
+
+footer .footer-content .list .icons span {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer .footer-content .list .icons span:hover {
+    background-color: var(--portland-orange);
+    color: var(--white);
+}
+
+footer .footer-content .list h3 {
+    font-size: 23px;
+    color: var(--white);
+    padding: 10px 0;
+}
+
+footer .footer-content .list>a {
+    color: var(--battleship-gray);
+    display: block;
+    font-size: 16px;
+    padding: 7px 0;
+}
+
+footer .footer-content .list>a:hover {
+    color: var(--portland-orange);
+}
+
+footer .container .footer-buttom {
+    padding: 15px 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-buttom p {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--battleship-gray);
+}
+
+.footer-buttom p span {
+    color: var(--portland-orange);
+}
+
+.footer-buttom img {
+    width: 300px;
+}
+
+@media (max-width: 992px) {
+    footer .footer-content .list {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+    }
+    footer .footer-content .list {
+        width: 98%;
+    }
+    footer .container .footer-buttom {
+        flex-direction: column;
+    }
+    .footer-buttom p {
+        font-size: 15px;
+    }
+}
+
+
+/* Ends footer */
